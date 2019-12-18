@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:adjustViewBounds="true"
         android:cropToPadding="false"
+        android:contentDescription="@string/app_name"
         app:srcCompat="@drawable/ic_etntac_splash_icon" />
 
     <WebView
-        android:id="@+id/webview"
+        android:id="@+id/web_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="invisible" />

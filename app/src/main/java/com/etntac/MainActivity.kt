@@ -11,7 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
-        val webView = findViewById<WebView>(R.id.webview)
-        webView.loadUrl("http://test.freemind.com.ua/")
+        startWebView()
+    }
+
+    private fun startWebView() {
+        val webView = findViewById<WebView>(R.id.web_view)
+        webView.loadUrl(BuildConfig.BASE_URL)
     }
 }
