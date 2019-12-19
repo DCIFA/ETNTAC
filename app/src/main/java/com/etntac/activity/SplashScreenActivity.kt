@@ -1,9 +1,9 @@
-package com.etntac
+package com.etntac.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 
-class SplashScreen : AppCompatActivity() {
+class SplashScreenActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
