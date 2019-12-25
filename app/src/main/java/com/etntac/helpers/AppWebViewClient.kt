@@ -17,10 +17,15 @@ class AppWebViewClient(val logo: ImageView) : WebViewClient() {
 
     override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
         view.loadUrl(url)
+        hideLogoAndShowBrowser(view)
         return true
     }
 
     override fun onPageCommitVisible(view: WebView?, url: String?) {
+        hideLogoAndShowBrowser(view)
+    }
+
+    private fun hideLogoAndShowBrowser(view: WebView?) {
         logo.visibility = View.GONE
         view?.visibility = View.VISIBLE
     }
